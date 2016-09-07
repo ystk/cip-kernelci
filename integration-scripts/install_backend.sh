@@ -27,3 +27,8 @@ MASTER_KEY=`cat /vagrant/config/secrets-backend.yml | grep master_key | \
            awk '{print $2;}'`
 TOKEN=`python /vagrant/scripts/get_admin_token.py ${MASTER_KEY}`
 echo $TOKEN > $HOME/backend-admin-token.txt
+
+# Create a configuration file for the build script
+echo "[CIP-KernelCI]" > $HOME/.buildpy.cfg
+echo "token=\"$TOKEN\"" >> $HOME/.buildpy.cfg
+echo "url=\"http://localhost:8888\"" $HOME/.buildpy.cfg

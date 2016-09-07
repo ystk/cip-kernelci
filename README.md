@@ -15,7 +15,7 @@ current revision of the kernel, issue
 	cd git-repos
 	git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 	cd linux
-	TREE_NAME=cip-dreiwettertaft ARCH=arm ~/kernelci-build/build.py -c tinyconfig
+	TREE_NAME=cip-dreiwettertaft ARCH=arm ~/kernelci-build/build.py -c tinyconfig -p CIP-KernelCI
 
 You can of course choose tree name, architecture, configuration, kernel revision
 etc. according to your needs. To view the results, start the frontend web server
