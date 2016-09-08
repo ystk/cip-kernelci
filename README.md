@@ -2,7 +2,7 @@
 
 This repository provides vagrant infrastructure that allows users/labs
 to easily set up a kernel CI front- end backend tailored to the needs
-of the civil infrastructure platform (http://www.cip-platform.org).
+of the Civil Infrastructure Platform (http://www.cip-project.org).
 
 After cloning the repo, issue
 
